@@ -1,0 +1,21 @@
+ID,code,name,percentage,description,isActive,createdAt,createdBy,modifiedAt,modifiedBy
+0f437a8e-e7f6-427f-9168-519dace91117,IGST0,IGST Nil Rated,0.00,IGST at nil rate,true,2026-04-15T13:55:00Z,purchasing.mgr,2026-05-03T19:55:00Z,dealer360.admin
+5decf4ee-0ceb-4140-a6b6-6dc991bc0db8,IGST5,IGST 5%,5.00,Integrated GST at 5%,true,2026-07-10T10:48:00Z,purchasing.mgr,2026-07-16T13:48:00Z,sales.ops
+f49419e3-4309-4050-a13e-c06bfb87aa26,IGST12,IGST 12%,12.00,Integrated GST at 12%,true,2025-11-20T12:11:00Z,finance.team,2025-12-07T13:11:00Z,dealer360.admin
+9d5a86b3-2682-438a-b335-790515d3cf57,IGST18,IGST 18%,18.00,Integrated GST at 18%,true,2026-03-29T16:44:00Z,purchasing.mgr,2026-04-17T23:44:00Z,dealer360.admin
+451e2a5a-6fd2-40b8-9f26-a40722d5d144,IGST28,IGST 28%,28.00,Integrated GST at 28%,true,2025-12-28T13:45:00Z,sales.ops,2026-01-06T20:45:00Z,credit.controller
+ca65b9a7-6c9e-4b81-8371-9cbe6ee8680d,IGST28CESS3,IGST 28% + Cess 3%,31.00,IGST 28% plus 3% compensation cess (350cc+ motorcycles),true,2026-01-14T18:42:00Z,sales.ops,2026-01-21T00:42:00Z,credit.controller
+fce6ac90-b2f9-4551-8efc-815494a5e2f3,IGST28CESS1,IGST 28% + Cess 1%,29.00,IGST 28% plus 1% compensation cess,true,2026-07-29T11:58:00Z,sales.ops,2026-08-06T13:58:00Z,dealer360.admin
+51d948d5-c60d-450c-a195-48d6a92c08e9,CGST2SGST2,CGST 2.5% + SGST 2.5%,5.00,Intra-state GST split totalling 5%,true,2025-11-24T13:38:00Z,system,2025-12-12T17:38:00Z,sales.ops
+b4efc27d-496a-4cbb-90a9-3cdc89163bfa,CGST6SGST6,CGST 6% + SGST 6%,12.00,Intra-state GST split totalling 12%,true,2026-04-28T13:44:00Z,system,2026-05-10T17:44:00Z,system
+991b9860-410d-401f-a6ea-d67423473ee8,CGST9SGST9,CGST 9% + SGST 9%,18.00,Intra-state GST split totalling 18%,true,2025-10-12T18:02:00Z,purchasing.mgr,2025-10-25T23:02:00Z,dealer360.admin
+c003e344-c9ad-4859-b58f-fb22c6de311f,CGST14SGST14,CGST 14% + SGST 14%,28.00,Intra-state GST split totalling 28%,true,2025-10-17T12:43:00Z,purchasing.mgr,2025-11-04T12:43:00Z,dealer360.admin
+4b7d38f4-d860-4481-b1f8-4162fc7f1698,CGST14SGST14CESS3,CGST 14% + SGST 14% + Cess 3%,31.00,Intra-state GST 28% plus 3% compensation cess,true,2025-11-29T16:33:00Z,purchasing.mgr,2025-12-19T23:33:00Z,finance.team
+b8654ef2-9e2b-49c2-877b-6433e27f33d1,GSTEXEMPT,GST Exempt Goods,0.00,Goods exempt from GST,true,2026-06-27T15:40:00Z,system,2026-07-12T16:40:00Z,fulfillment.ops
+132093a5-eb01-4786-a4a6-2470f3322498,TCS1,TCS on Sale of Motor Vehicle,1.00,Tax collected at source on motor vehicle sale,true,2026-03-29T14:20:00Z,fulfillment.ops,2026-04-01T16:20:00Z,onboarding.team
+c482b540-bd2d-4bff-853b-ec1888ba46ab,TDS2,TDS on Contractor Payment,2.00,Tax deducted at source on contractor payment,true,2026-08-22T16:18:00Z,dealer360.admin,2026-09-04T00:18:00Z,system
+adfaf9c1-8368-4082-b108-de6f09124deb,RCM18,Reverse Charge - GTA Services,18.00,Reverse charge mechanism on GTA services,true,2025-10-16T14:16:00Z,onboarding.team,2025-10-26T15:16:00Z,dealer360.admin
+68c606f3-aac8-4c5e-a058-34afafd1faa8,CESSLUX1,Compensation Cess 1%,1.00,Standalone compensation cess at 1%,true,2026-08-03T17:29:00Z,credit.controller,2026-08-16T17:29:00Z,fulfillment.ops
+753b8d16-479d-4569-aa86-882f06d78518,CESSLUX3,Compensation Cess 3%,3.00,Standalone compensation cess at 3%,true,2026-07-16T16:40:00Z,credit.controller,2026-07-30T16:40:00Z,purchasing.mgr
+84b9351b-aba9-45e0-a4ea-1e7e6718da97,CESSLUX22,Compensation Cess 22%,22.00,Compensation cess for premium segment,true,2026-06-09T11:59:00Z,system,2026-06-18T18:59:00Z,sales.ops
+1125007d-0dfe-4901-8cd6-0e3a317d0f18,GSTNIL,GST Nil Rated Export Supply,0.00,Zero-rated export supply,true,2025-09-15T18:51:00Z,purchasing.mgr,2025-09-22T20:51:00Z,dealer360.admin

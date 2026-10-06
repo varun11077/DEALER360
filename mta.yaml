@@ -1,0 +1,113 @@
+_schema-version: 3.3.0
+ID: dealer360
+version: 1.0.0
+description: "DEALER360 Enterprise B2B Dealer Operations Platform"
+
+parameters:
+  enable-parallel-deployments: true
+
+build-parameters:
+  before-all:
+    - builder: custom
+      commands:
+        - npm ci
+        - npx cds build --production
+
+modules:
+
+  # ============================================================
+  # CAP SERVICE
+  # ============================================================
+  - name: dealer360-srv
+    type: nodejs
+    path: gen/srv
+
+    parameters:
+      instances: 1
+      buildpack: nodejs_buildpack
+
+    build-parameters:
+      builder: npm-ci
+
+    provides:
+      - name: srv-api
+        properties:
+          srv-url: ${default-url}
+
+    requires:
+      - name: dealer360-db
+      - name: dealer360-xsuaa
+
+
+  # ============================================================
+  # HANA DB DEPLOYER
+  # ============================================================
+  - name: dealer360-db-deployer
+    type: hdb
+    path: gen/db
+
+    parameters:
+      buildpack: nodejs_buildpack
+
+    requires:
+      - name: dealer360-db
+
+
+  # ============================================================
+  # APPLICATION ROUTER
+  # ============================================================
+  - name: dealer360
+    type: approuter.nodejs
+    path: app/router
+
+    parameters:
+      keep-existing-routes: true
+      disk-quota: 256M
+      memory: 256M
+
+    requires:
+
+      # CAP backend destination
+      - name: srv-api
+        group: destinations
+        properties:
+          name: srv-api
+          url: ~{srv-url}
+          forwardAuthToken: true
+
+      # XSUAA authentication
+      - name: dealer360-xsuaa
+
+    provides:
+      - name: app-api
+        properties:
+          app-protocol: ${protocol}
+          app-uri: ${default-uri}
+
+
+# ==============================================================
+# RESOURCES
+# ==============================================================
+resources:
+
+  # ============================================================
+  # HANA HDI CONTAINER
+  # ============================================================
+  - name: dealer360-db
+    type: com.sap.xs.hdi-container
+
+    parameters:
+      service: hana
+      service-plan: hdi-shared
+
+
+  # ============================================================
+  # XSUAA
+  # ============================================================
+  - name: dealer360-xsuaa
+    type: org.cloudfoundry.managed-service
+
+    parameters:
+      service: xsuaa
+      service-plan: application
+      path: ./xs-security.json

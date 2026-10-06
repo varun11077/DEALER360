@@ -1,0 +1,21 @@
+ID,code,name,description,creditDays,isActive,createdAt,createdBy,modifiedAt,modifiedBy
+525f4312-9a51-4260-9495-7c6371db0c45,IMMEDIATE,Immediate Payment,Immediate Payment payment term,0,true,2026-03-15T09:54:00Z,credit.controller,2026-03-30T12:54:00Z,system
+9b8a9494-9654-493a-9349-4fceb9c0e709,NET15,Net 15 Days,Net 15 Days payment term,15,true,2026-02-27T13:52:00Z,dealer360.admin,2026-03-06T16:52:00Z,credit.controller
+c6b94e46-80ae-43bf-bb1e-b910e93ca397,NET30,Net 30 Days,Net 30 Days payment term,30,true,2026-03-24T14:17:00Z,fulfillment.ops,2026-03-26T18:17:00Z,onboarding.team
+ff677a7b-27fc-412e-9450-4f0dcc3fcfec,NET45,Net 45 Days,Net 45 Days payment term,45,true,2026-08-14T17:21:00Z,purchasing.mgr,2026-08-14T18:21:00Z,finance.team
+fdb36154-3871-4908-b541-37aa6e4125c6,NET60,Net 60 Days,Net 60 Days payment term,60,true,2026-06-25T13:02:00Z,fulfillment.ops,2026-06-28T19:02:00Z,fulfillment.ops
+ccbf92eb-5454-4f44-bbeb-c0c49dd98578,NET90,Net 90 Days,Net 90 Days payment term,90,true,2026-04-12T18:32:00Z,credit.controller,2026-04-16T00:32:00Z,purchasing.mgr
+8c6fa4be-4f86-4601-8ae3-852ab0ab31a1,ADVANCE_100,100% Advance Payment,100% Advance Payment payment term,0,true,2025-09-23T15:00:00Z,credit.controller,2025-10-09T23:00:00Z,fulfillment.ops
+b389f9a1-2b0b-43be-bde5-3c2b63e3d617,ADVANCE_50,"50% Advance, Balance on Delivery","50% Advance, Balance on Delivery payment term",0,true,2026-04-09T10:42:00Z,sales.ops,2026-04-19T15:42:00Z,purchasing.mgr
+39104feb-5a35-444e-878c-9ec5ccfb2776,COD,Cash on Delivery,Cash on Delivery payment term,0,true,2026-05-18T13:42:00Z,onboarding.team,2026-05-31T18:42:00Z,purchasing.mgr
+9d631f93-3989-4f77-a6be-019fc075a97d,LC_30,Letter of Credit - 30 Days,Letter of Credit - 30 Days payment term,30,true,2026-06-11T11:12:00Z,finance.team,2026-06-24T17:12:00Z,purchasing.mgr
+e3b0424b-d126-4d29-8748-7273a7d99bef,LC_60,Letter of Credit - 60 Days,Letter of Credit - 60 Days payment term,60,true,2026-03-27T17:53:00Z,purchasing.mgr,2026-03-27T21:53:00Z,credit.controller
+05e93041-c209-463a-98aa-e2f4c68de517,LC_90,Letter of Credit - 90 Days,Letter of Credit - 90 Days payment term,90,true,2026-04-09T18:38:00Z,system,2026-04-29T23:38:00Z,system
+7cf5ce59-31b5-4301-b855-1ace5293fccf,EOM,End of Month,End of Month payment term,30,true,2026-04-15T12:32:00Z,sales.ops,2026-04-30T14:32:00Z,purchasing.mgr
+4721a80f-515a-4e83-9814-0bd6fb79413f,NET10_2PCT,2/10 Net 30,2/10 Net 30 payment term,30,true,2026-05-22T18:21:00Z,purchasing.mgr,2026-05-24T21:21:00Z,credit.controller
+0e5c8534-b779-4eb4-9c39-9b3f4183e955,CONSIGNMENT,Consignment Basis,Consignment Basis payment term,90,true,2025-12-11T11:01:00Z,system,2025-12-12T14:01:00Z,sales.ops
+a4d0bf79-6d1b-4350-90fb-ae10037795f0,QUARTERLY,Quarterly Settlement,Quarterly Settlement payment term,90,true,2026-04-22T15:56:00Z,onboarding.team,2026-05-12T18:56:00Z,system
+cdd1e5f8-48cf-409f-a14e-be2752de239c,BILL_DISCOUNTING,Bill Discounting,Bill Discounting payment term,45,true,2026-03-24T12:09:00Z,sales.ops,2026-04-13T12:09:00Z,onboarding.team
+8a367d49-e092-441c-8234-4b384dbdc23a,BANK_GUARANTEE,Bank Guarantee Backed,Bank Guarantee Backed payment term,60,true,2025-12-22T11:51:00Z,dealer360.admin,2026-01-07T18:51:00Z,credit.controller
+95426421-1d20-4f4d-acdf-6426fcecff8f,CREDIT_NOTE_ADJ,Credit Note Adjustment,Credit Note Adjustment payment term,15,true,2025-11-02T16:08:00Z,fulfillment.ops,2025-11-17T00:08:00Z,system
+1e4f0b58-9c4d-477c-92b4-2ad1d9d946a4,MILESTONE,Milestone Based Payment,Milestone Based Payment payment term,30,true,2026-07-11T17:27:00Z,finance.team,2026-07-29T00:27:00Z,system

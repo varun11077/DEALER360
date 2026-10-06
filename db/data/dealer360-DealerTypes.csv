@@ -1,0 +1,21 @@
+ID,code,name,description,isActive,createdAt,createdBy,modifiedAt,modifiedBy
+189274bf-57f9-46d6-b6ee-52a285c4e9b4,AUTHORIZED_DEALER,Authorized Dealer,Official authorized dealer,true,2025-12-21T09:37:00Z,fulfillment.ops,2026-01-07T09:37:00Z,dealer360.admin
+b44ea3cf-00a8-4098-85f7-f161ee167d19,DISTRIBUTOR,Distributor,Regional product distributor,true,2025-09-26T18:30:00Z,finance.team,2025-10-13T02:30:00Z,dealer360.admin
+337ba3d5-9991-4a64-8d52-0d1c88510184,SUB_DEALER,Sub Dealer,Sub-dealer under an authorized dealer,true,2026-05-19T10:54:00Z,sales.ops,2026-05-24T11:54:00Z,credit.controller
+b68e74ac-e3f5-48b8-baa0-36ff0fafc9cd,SERVICE_DEALER,Service Dealer,Authorized service-only outlet,true,2026-03-26T10:56:00Z,dealer360.admin,2026-04-13T13:56:00Z,sales.ops
+a83aa995-91e0-4922-872e-ddf2df5a03f8,MASTER_DISTRIBUTOR,Master Distributor,State-level master distributor,true,2026-04-03T18:36:00Z,purchasing.mgr,2026-04-19T23:36:00Z,credit.controller
+b5459c19-d5ea-42c8-ae17-b019c49522d2,RURAL_AUTHORIZED_DEALER,Rural Authorized Dealer,Authorized dealer serving rural markets,true,2026-08-09T14:15:00Z,finance.team,2026-08-17T20:15:00Z,purchasing.mgr
+f082daef-3d12-4aa8-912a-2263f04512ec,URBAN_AUTHORIZED_DEALER,Urban Authorized Dealer,Authorized dealer serving metro markets,true,2026-04-23T14:59:00Z,system,2026-04-25T14:59:00Z,sales.ops
+af5a35a4-c139-4b17-9923-e383d0c33638,EXPORT_DISTRIBUTOR,Export Distributor,Distributor handling export shipments,true,2025-10-08T17:13:00Z,finance.team,2025-10-24T21:13:00Z,fulfillment.ops
+926ae2d0-d5f5-4795-944f-1654c06061d7,FLEET_DEALER,Fleet Dealer,Dealer specializing in corporate fleet sales,true,2025-10-06T12:23:00Z,system,2025-10-15T14:23:00Z,purchasing.mgr
+833de0a5-b00e-467b-8fd9-ecdc93b75767,PREMIUM_FLAGSHIP_DEALER,Premium Flagship Dealer,Flagship showroom dealer,true,2026-07-11T17:00:00Z,sales.ops,2026-07-28T21:00:00Z,finance.team
+78d00f79-033c-47de-97b9-41288ad632a2,USED_VEHICLE_DEALER,Used Vehicle Dealer,Certified pre-owned vehicle dealer,true,2026-01-14T10:56:00Z,finance.team,2026-01-17T18:56:00Z,purchasing.mgr
+e2f5f63a-e95a-4ba6-93f1-00abf079b41e,SPARE_PARTS_DEALER,Spare Parts Dealer,Genuine spare parts stockist,true,2026-01-23T18:13:00Z,purchasing.mgr,2026-02-02T21:13:00Z,system
+67f46564-fe1f-42d7-8297-e2dcda8013fd,ACCESSORY_DEALER,Accessory Dealer,Accessories and merchandise outlet,true,2026-01-07T09:05:00Z,purchasing.mgr,2026-01-27T15:05:00Z,dealer360.admin
+bb937c06-7706-441e-b557-602afed6b34a,SERVICE_CENTER_ONLY,Service Center Only,Authorized service center without sales,true,2025-09-02T14:49:00Z,finance.team,2025-09-06T18:49:00Z,system
+ce53df93-dbeb-428e-8783-0ddb4f01c256,MOBILE_SERVICE_DEALER,Mobile Service Dealer,Doorstep/mobile service partner,true,2026-06-10T15:35:00Z,sales.ops,2026-06-10T16:35:00Z,finance.team
+2dbb699a-448b-46d4-bd3a-95c34922c048,THREE_S_DEALER,3S Dealer,"Sales, Service and Spares dealer",true,2026-06-07T09:53:00Z,finance.team,2026-06-18T17:53:00Z,onboarding.team
+e5309f74-5c69-4101-bd52-fc16710c5603,TWO_S_DEALER,2S Dealer,Service and Spares dealer,true,2025-11-05T09:19:00Z,fulfillment.ops,2025-11-16T09:19:00Z,credit.controller
+74c03d6b-83ee-41e4-a721-86980b387ebf,EXPERIENCE_CENTER,Experience Center,Brand experience and test-ride center,true,2026-08-16T12:42:00Z,onboarding.team,2026-08-19T17:42:00Z,finance.team
+0286763c-74e0-41a6-89bd-e039b7c902c0,ONLINE_CHANNEL_PARTNER,Online Channel Partner,Digital-first booking partner,true,2025-12-31T11:51:00Z,dealer360.admin,2026-01-05T17:51:00Z,finance.team
+fda6804c-f518-43a1-9bb0-4771f8b6f425,CORPORATE_FLEET_PARTNER,Corporate Fleet Partner,Dedicated corporate fleet partner,true,2026-02-18T15:51:00Z,finance.team,2026-02-25T19:51:00Z,sales.ops

@@ -1,0 +1,21 @@
+ID,code,name,description,isActive,createdAt,createdBy,modifiedAt,modifiedBy
+0d2c9f06-cc88-4c90-91f4-93917fa95541,KA-Z,Karnataka Zone,Karnataka state dealer network region,true,2026-07-25T10:01:00Z,credit.controller,2026-08-02T13:01:00Z,finance.team
+b66de7f5-44bc-49e3-bb74-639fd3dcd2a3,TN-Z,Tamil Nadu Zone,Tamil Nadu state dealer network region,true,2025-10-23T17:05:00Z,dealer360.admin,2025-11-10T23:05:00Z,dealer360.admin
+abf3d478-152f-4130-9d0b-144923355d26,MH-Z,Maharashtra Zone,Maharashtra state dealer network region,true,2025-10-18T12:14:00Z,credit.controller,2025-11-03T12:14:00Z,onboarding.team
+cd62205b-0f38-478c-bb27-349b6a9c708b,DL-Z,Delhi NCR Zone,Delhi NCR dealer network region,true,2025-12-22T16:37:00Z,finance.team,2025-12-30T16:37:00Z,onboarding.team
+f9334a3c-d4c1-435d-8c35-7f1a9640f8f3,GJ-Z,Gujarat Zone,Gujarat state dealer network region,true,2026-02-22T13:09:00Z,sales.ops,2026-02-28T18:09:00Z,sales.ops
+5d13812c-fff0-4a0f-9f6e-89e3e1de052e,PB-Z,Punjab Zone,Punjab state dealer network region,true,2026-03-14T10:22:00Z,dealer360.admin,2026-03-25T14:22:00Z,system
+fac30d3e-cfb1-46bd-bd46-9078fc4d53c0,KL-Z,Kerala Zone,Kerala state dealer network region,true,2026-06-02T10:59:00Z,purchasing.mgr,2026-06-14T11:59:00Z,fulfillment.ops
+b0671089-234c-4da0-90e5-51101da41039,WB-Z,West Bengal Zone,West Bengal state dealer network region,true,2026-06-23T12:45:00Z,credit.controller,2026-06-25T12:45:00Z,purchasing.mgr
+91b5720a-95a9-494c-ad4a-c0ad2289ee77,RJ-Z,Rajasthan Zone,Rajasthan state dealer network region,true,2025-10-11T12:55:00Z,purchasing.mgr,2025-10-14T18:55:00Z,system
+8b3713b6-f4f9-4ecb-a734-e57c14fd7522,TS-Z,Telangana Zone,Telangana state dealer network region,true,2026-07-23T14:10:00Z,credit.controller,2026-08-03T19:10:00Z,purchasing.mgr
+b9a99f5b-2fb2-4ce6-960b-b3fb3ba2ab97,AP-Z,Andhra Pradesh Zone,Andhra Pradesh state dealer network region,true,2026-08-26T10:38:00Z,credit.controller,2026-09-15T12:38:00Z,finance.team
+3fa7690d-cd85-49a4-bb33-51732757f18f,MP-Z,Madhya Pradesh Zone,Madhya Pradesh state dealer network region,true,2026-04-25T15:17:00Z,credit.controller,2026-05-15T23:17:00Z,fulfillment.ops
+982f96a0-809d-45fd-a8a5-52d68405a3d8,UP-Z,Uttar Pradesh Zone,Uttar Pradesh state dealer network region,true,2025-09-29T12:52:00Z,onboarding.team,2025-09-30T17:52:00Z,purchasing.mgr
+a3e5ef62-01a0-4240-a300-b0519b3d3d4b,BR-Z,Bihar Zone,Bihar state dealer network region,true,2025-10-04T12:58:00Z,credit.controller,2025-10-22T17:58:00Z,system
+a08ffe77-ac19-40d7-80a4-a0aa9c77f0d3,OD-Z,Odisha Zone,Odisha state dealer network region,true,2026-03-22T16:09:00Z,credit.controller,2026-03-30T18:09:00Z,purchasing.mgr
+53dc773d-7b72-48f9-82d5-7c909cc7a469,AS-Z,Assam Zone,Assam state dealer network region,true,2026-06-27T15:57:00Z,fulfillment.ops,2026-07-15T21:57:00Z,credit.controller
+5c0cf47d-a9d3-499b-97f2-9c6a73b3af5e,CG-Z,Chhattisgarh Zone,Chhattisgarh state dealer network region,true,2025-11-10T17:31:00Z,sales.ops,2025-11-12T17:31:00Z,finance.team
+c718a0a5-8e28-4a52-8387-d42bc88e1333,JH-Z,Jharkhand Zone,Jharkhand state dealer network region,true,2026-07-19T11:50:00Z,onboarding.team,2026-08-01T12:50:00Z,onboarding.team
+6088474e-cd1f-4b98-a405-a577f331462f,HR-Z,Haryana Zone,Haryana state dealer network region,true,2026-07-03T16:33:00Z,dealer360.admin,2026-07-12T00:33:00Z,sales.ops
+8c8abfe6-cffb-45f8-a972-831392dc5620,UK-Z,Uttarakhand Zone,Uttarakhand state dealer network region,true,2026-08-16T17:48:00Z,sales.ops,2026-08-24T22:48:00Z,purchasing.mgr

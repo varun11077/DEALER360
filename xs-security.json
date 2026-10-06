@@ -1,0 +1,31 @@
+{
+  "xsappname": "dealer360",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.User",
+      "description": "DEALER360 User"
+    },
+    {
+      "name": "$XSAPPNAME.Admin",
+      "description": "DEALER360 Administrator"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "User",
+      "description": "DEALER360 User",
+      "scope-references": [
+        "$XSAPPNAME.User"
+      ]
+    },
+    {
+      "name": "Admin",
+      "description": "DEALER360 Administrator",
+      "scope-references": [
+        "$XSAPPNAME.User",
+        "$XSAPPNAME.Admin"
+      ]
+    }
+  ]
+}

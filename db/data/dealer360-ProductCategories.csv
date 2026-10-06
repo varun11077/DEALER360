@@ -1,0 +1,21 @@
+ID,code,name,description,isActive,createdAt,createdBy,modifiedAt,modifiedBy
+aa23f8f2-5286-4c96-b404-0b3bfedc8be5,VEHICLE-CRUISER,Cruiser Motorcycles,Cruiser segment motorcycles,true,2026-04-19T13:48:00Z,system,2026-04-26T17:48:00Z,credit.controller
+c1637d45-622a-494e-ac9b-52efb1a4e9ae,VEHICLE-ADVENTURE,Adventure Motorcycles,Adventure touring motorcycles,true,2026-01-19T16:04:00Z,purchasing.mgr,2026-01-28T19:04:00Z,fulfillment.ops
+60abea92-4905-48c3-82cf-9d451649f15c,VEHICLE-ROADSTER,Roadster Motorcycles,Roadster segment motorcycles,true,2026-02-11T17:05:00Z,credit.controller,2026-02-15T19:05:00Z,onboarding.team
+ed4ff988-c57e-4687-95ca-60224e607eeb,VEHICLE-CLASSIC,Classic Motorcycles,Retro classic motorcycles,true,2026-08-22T11:45:00Z,onboarding.team,2026-08-28T12:45:00Z,onboarding.team
+ab517e60-f2bf-4e9e-8674-6e35beb0de95,VEHICLE-SCRAMBLER,Scrambler Motorcycles,Scrambler segment motorcycles,true,2026-02-17T17:29:00Z,credit.controller,2026-03-02T17:29:00Z,onboarding.team
+6a14dde8-dd13-4ea5-902d-8df39a323471,VEHICLE-CAFE_RACER,Cafe Racer Motorcycles,Cafe racer segment motorcycles,true,2026-03-19T18:44:00Z,system,2026-03-20T00:44:00Z,dealer360.admin
+2fe5579c-4e5d-4f7d-bc64-bb6fbc2b07a8,SPARE_PARTS-ENGINE,Engine Spare Parts,Engine and powertrain spare parts,true,2026-02-28T13:48:00Z,credit.controller,2026-03-12T19:48:00Z,system
+f4989dc2-f31b-4cee-afb1-7a89c98a7926,SPARE_PARTS-ELECTRICAL,Electrical Spare Parts,Electrical system spare parts,true,2025-12-22T13:27:00Z,onboarding.team,2026-01-06T13:27:00Z,fulfillment.ops
+65a5f5aa-e728-41a3-ab2e-a4092d92c1c8,SPARE_PARTS-BODY,Body Spare Parts,Body panels and fuel tank spare parts,true,2026-08-09T15:46:00Z,finance.team,2026-08-14T22:46:00Z,dealer360.admin
+c7b2f26c-f1ee-42d2-acac-7544e6b03830,SPARE_PARTS-BRAKE,Brake Spare Parts,Braking system spare parts,true,2026-03-21T18:36:00Z,onboarding.team,2026-03-21T19:36:00Z,finance.team
+c01ea678-09fe-4208-8383-70e955e7eef9,ACCESSORIES-RIDING_GEAR,Riding Gear Accessories,Riding gear and comfort accessories,true,2026-04-25T11:03:00Z,fulfillment.ops,2026-05-03T17:03:00Z,credit.controller
+81d0541c-6aec-4f5f-bbcc-3ab0b0d4bbbe,ACCESSORIES-LUGGAGE,Luggage Accessories,Touring luggage and pannier accessories,true,2026-04-21T14:21:00Z,onboarding.team,2026-05-03T18:21:00Z,purchasing.mgr
+5372445d-b575-4a36-88e9-4f342711ba0e,ACCESSORIES-PROTECTION,Protection Accessories,Crash guards and protection accessories,true,2025-10-12T16:01:00Z,fulfillment.ops,2025-10-29T16:01:00Z,credit.controller
+de33b341-bf33-42d7-8e99-c6ebf5322141,ACCESSORIES-ELECTRICALS,Electrical Accessories,Electrical add-on accessories,true,2026-07-30T10:49:00Z,dealer360.admin,2026-08-19T10:49:00Z,credit.controller
+6564aa4b-23af-41a7-a6d7-89365f95844e,APPAREL-JACKETS,Riding Jackets,Riding jackets apparel,true,2025-12-12T09:39:00Z,finance.team,2025-12-16T12:39:00Z,system
+e32a4f7a-d77c-4586-b56f-7bb74293056d,APPAREL-HELMETS,Helmets,Certified riding helmets,true,2026-08-09T10:36:00Z,purchasing.mgr,2026-08-15T17:36:00Z,fulfillment.ops
+e717983b-b665-4f04-b095-c7622daa73bb,APPAREL-GLOVES,Riding Gloves,Riding gloves apparel,true,2025-11-25T18:38:00Z,purchasing.mgr,2025-11-28T20:38:00Z,sales.ops
+cd602683-c2c5-4f23-b338-86eec39b1947,MERCHANDISE-LIFESTYLE,Lifestyle Merchandise,Brand lifestyle merchandise,true,2026-06-24T09:59:00Z,onboarding.team,2026-07-03T15:59:00Z,credit.controller
+29cc9701-924d-4afc-ba17-8b8c9fd5228b,SERVICE_KITS-PERIODIC,Periodic Maintenance Kits,Periodic maintenance service kits,true,2025-10-09T18:44:00Z,sales.ops,2025-10-29T21:44:00Z,purchasing.mgr
+14cfffac-01ff-4928-aa3a-b5c5118b99e0,SERVICE_KITS-WARRANTY,Extended Warranty Kits,Extended warranty service packages,true,2026-08-17T18:51:00Z,fulfillment.ops,2026-08-20T18:51:00Z,onboarding.team

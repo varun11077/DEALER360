@@ -1,0 +1,2243 @@
+GET http://localhost:4004/dealer/DealerTypes
+
+###
+GET http://localhost:4004/dealer/Regions
+
+###
+GET http://localhost:4004/dealer/States
+
+###
+GET http://localhost:4004/dealer/PaymentTerms
+
+###
+GET http://localhost:4004/dealer/States?$expand=region
+
+
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+    "legalName": "Bharat Motors Private Limited",
+    "tradeName": "Bharat Motors",
+    "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+    "gstNumber": "29ABCDE1234F1Z5",
+    "panNumber": "ABCDE1234F",
+    "primaryEmail": "dealer@bharatmotors.com",
+    "primaryPhone": "+919876543210",
+    "alternatePhone": "08045678901",
+    "website": "https://www.bharatmotors.com",
+    "annualTurnover": 250000000,
+    "employeeCount": 150,
+    "yearEstablished": 2005,
+    "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "state_ID": "10000000-0000-0000-0000-000000000001",
+    "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+    "creditLimit": 5000000,
+    "currency": "INR",
+    "bankName": "State Bank of India",
+    "bankBranch": "Bangalore Main Branch",
+    "bankAccountNumber": "123456789012",
+    "ifscCode": "SBIN0001234",
+    "onboardingRemarks": "New authorized dealer onboarding"
+}
+
+###
+GET http://localhost:4004/dealer/Dealers?$expand=dealerType,region,state,paymentTerms,addresses,contacts,documents
+###
+GET http://localhost:4004/dealer/DealerStatusHistory
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+    "dealerId": "YOUR-DEALER-ID"
+}
+###
+GET http://localhost:4004/dealer/Dealers
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+    "dealerId": "48e2674d-65f3-4770-9f78-0dd1c63b98f4"
+}
+
+###
+GET http://localhost:4004/dealer/OnboardingApprovals
+
+###
+GET http://localhost:4004/dealer/DealerStatusHistory
+
+###
+GET http://localhost:4004/dealer/OnboardingApprovals
+
+###
+POST http://localhost:4004/dealer/l1Approve
+Content-Type: application/json
+
+{
+    "dealerId": "48e2674d-65f3-4770-9f78-0dd1c63b98f4"
+}
+
+###
+GET http://localhost:4004/dealer/OnboardingApprovals
+
+###
+GET http://localhost:4004/dealer/OnboardingApprovals
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+    "legalName": "Bharat Motors Private Limited",
+    "tradeName": "Bharat Motors",
+    "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+    "gstNumber": "29ABCDE1234F1Z5",
+    "panNumber": "ABCDE1234F",
+    "primaryEmail": "dealer@bharatmotors.com",
+    "primaryPhone": "+919876543210",
+    "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "state_ID": "10000000-0000-0000-0000-000000000001",
+    "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+    "creditLimit": 5000000,
+    "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+    "dealerId": "0849cb33-30ff-4bd5-877c-8a971103b5eb"
+}
+
+###
+GET http://localhost:4004/dealer/OnboardingApprovals
+
+###
+POST http://localhost:4004/dealer/l1Approve
+Content-Type: application/json
+
+{
+    "dealerId": "0849cb33-30ff-4bd5-877c-8a971103b5eb"
+}###
+
+###
+GET http://localhost:4004/dealer/OnboardingApprovals
+
+###
+POST http://localhost:4004/dealer/l2Approve
+Content-Type: application/json
+
+{
+    "dealerId": "0849cb33-30ff-4bd5-877c-8a971103b5eb"
+}
+###
+GET http://localhost:4004/dealer/OnboardingApprovals
+
+###
+GET http://localhost:4004/dealer/Dealers
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+    "legalName": "Invalid GST Motors",
+    "tradeName": "Invalid GST Motors",
+    "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+    "gstNumber": "INVALIDGST123",
+    "panNumber": "ABCDE1234F",
+    "primaryEmail": "invalidgst@example.com",
+    "primaryPhone": "+919876543211",
+    "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "state_ID": "10000000-0000-0000-0000-000000000001",
+    "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+    "creditLimit": 1000000,
+    "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+    "legalName": "Invalid PAN Motors",
+    "tradeName": "Invalid PAN Motors",
+    "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+    "gstNumber": "29ABCDE1234F1Z5",
+    "panNumber": "INVALIDPAN",
+    "primaryEmail": "invalidpan@example.com",
+    "primaryPhone": "+919876543212",
+    "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "state_ID": "10000000-0000-0000-0000-000000000001",
+    "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+    "creditLimit": 1000000,
+    "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+    "legalName": "Invalid Email Motors",
+    "tradeName": "Invalid Email Motors",
+    "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+    "gstNumber": "29ABCDE1234F1Z5",
+    "panNumber": "ABCDE1234F",
+    "primaryEmail": "invalid-email",
+    "primaryPhone": "+919876543213",
+    "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "state_ID": "10000000-0000-0000-0000-000000000001",
+    "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+    "creditLimit": 1000000,
+    "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+    "legalName": "Invalid Phone Motors",
+    "tradeName": "Invalid Phone Motors",
+    "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+    "gstNumber": "29ABCDE1234F1Z5",
+    "panNumber": "ABCDE1234F",
+    "primaryEmail": "invalidphone@example.com",
+    "primaryPhone": "123",
+    "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "state_ID": "10000000-0000-0000-0000-000000000001",
+    "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+    "creditLimit": 1000000,
+    "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+    "legalName": "Duplicate GST Motors",
+    "tradeName": "Duplicate GST Motors",
+    "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+    "gstNumber": "29ABCDE1234F1Z5",
+    "panNumber": "FGHIJ5678K",
+    "primaryEmail": "duplicategst@example.com",
+    "primaryPhone": "+919876543214",
+    "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "state_ID": "10000000-0000-0000-0000-000000000001",
+    "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+    "creditLimit": 1000000,
+    "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+    "dealerId": "11cc6bdb-b90d-4574-8fb9-e1b04f459980"
+}
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+    "legalName": "Duplicate PAN Motors",
+    "tradeName": "Duplicate PAN Motors",
+    "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+    "gstNumber": "29FGHIJ5678K1Z6",
+    "panNumber": "ABCDE1234F",
+    "primaryEmail": "duplicatepan@example.com",
+    "primaryPhone": "+919876543215",
+    "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "state_ID": "10000000-0000-0000-0000-000000000001",
+    "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+    "creditLimit": 1000000,
+    "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+    "dealerId": "bca202b1-2d46-4bd3-86c4-14343e32a57d"
+}
+###
+
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+    "legalName": "State Test Motors",
+    "tradeName": "State Test Motors",
+    "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+    "gstNumber": "29JKLMN5678P1Z7",
+    "panNumber": "JKLMN5678P",
+    "primaryEmail": "statetest@example.com",
+    "primaryPhone": "+919876543216",
+    "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "state_ID": "10000000-0000-0000-0000-000000000001",
+    "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+    "creditLimit": 1000000,
+    "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/l2Approve
+Content-Type: application/json
+
+{
+    "dealerId": "aed1244e-2d88-4303-b61c-0345a385b643"
+}
+
+###
+POST http://localhost:4004/odata/v4/dealer/l1Approve
+Content-Type: application/json
+
+{
+  "dealerId": "aed1244e-2d88-4303-b61c-0345a385b643"
+}
+###
+GET http://localhost:4004/odata/v4/dealer/Dealers
+
+###
+GET http://localhost:4004/odata/v4/dealer
+###
+GET http://localhost:4004/odata/v4/dealer/
+###
+GET http://localhost:4004/dealer/$metadata
+
+###
+GET http://localhost:4004/dealer/Dealers
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "Negative Test Dealer",
+  "tradeName": "Negative Test Motors",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "gstNumber": "29TESTD1234F1Z5",
+  "panNumber": "TESTD1234F",
+  "primaryEmail": "negative.test@dealer360.com",
+  "primaryPhone": "+919876543211",
+  "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+  "state_ID": "10000000-0000-0000-0000-000000000001",
+  "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+  "creditLimit": 1000000
+}
+
+
+###
+POST http://localhost:4004/dealer/l1Approve
+Content-Type: application/json
+
+{
+  "dealerId": "05a7145c-84f4-443f-9186-cf1d58dd9030"
+}
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+  "dealerId": "05a7145c-84f4-443f-9186-cf1d58dd9030"
+}
+
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+  "dealerId": "05a7145c-84f4-443f-9186-cf1d58dd9030"
+}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+  "dealerId": "05a7145c-84f4-443f-9186-cf1d58dd9030";
+
+
+}
+
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+  "dealerId": "05a7145c-84f4-443f-9186-cf1d58dd9030"
+}
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "Rejection Test Dealer",
+  "tradeName": "Rejection Motors",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "gstNumber": "29ABCDE1234F1Z5",
+  "panNumber": "REJTD1234F",
+  "primaryEmail": "rejection.test@dealer360.com",
+  "primaryPhone": "+919876543212",
+  "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+  "state_ID": "10000000-0000-0000-0000-000000000001",
+  "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+  "creditLimit": 1000000
+}
+
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+  "dealerId": "e07b877f-3393-406e-a8f0-8e0219c86fa6"
+}
+
+
+###
+POST http://localhost:4004/dealer/rejectDealer
+Content-Type: application/json
+
+{
+  "dealerId": "e07b877f-3393-406e-a8f0-8e0219c86fa6",
+  "reason": "GST documentation could not be verified."
+}
+
+###
+GET http://localhost:4004/dealer/OnboardingApprovals
+
+###
+GET http://localhost:4004/dealer/DealerStatusHistory
+
+###
+GET http://localhost:4004/dealer/OnboardingApprovals
+
+###
+GET http://localhost:4004/dealer/DealerStatusHistory
+
+
+###
+GET http://localhost:4004/dealer/OnboardingApprovals
+
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "Block Test Dealer",
+  "tradeName": "Block Test Motors",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "gstNumber": "29ABCDE5678G1Z5",
+  "panNumber": "BLCKD1234F",
+  "primaryEmail": "block.test@dealer360.com",
+  "primaryPhone": "+919876543213",
+  "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+  "state_ID": "10000000-0000-0000-0000-000000000001",
+  "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+  "creditLimit": 2000000
+}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+  "dealerId": "f59c25cc-70bb-4e5c-8b2e-4c6f3af591f6"
+}
+
+###
+POST http://localhost:4004/dealer/l1Approve
+Content-Type: application/json
+
+{
+  "dealerId": "f59c25cc-70bb-4e5c-8b2e-4c6f3af591f6"
+}
+
+
+###
+POST http://localhost:4004/dealer/l2Approve
+Content-Type: application/json
+
+{
+  "dealerId": "f59c25cc-70bb-4e5c-8b2e-4c6f3af591f6"
+}
+
+###
+POST http://localhost:4004/dealer/blockDealer
+Content-Type: application/json
+
+{
+  "dealerId": "f59c25cc-70bb-4e5c-8b2e-4c6f3af591f6",
+  "reason": "Dealer account blocked for compliance review."
+}
+
+###
+GET http://localhost:4004/pricing/Products
+###
+GET http://localhost:4004/pricing/Dealers
+
+###
+
+GET http://localhost:4004/dealer/Dealers
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "DEALER360 Test Motors",
+  "tradeName": "DEALER360 Motors",
+  "dealerType_ID": "<GET-DEALER-TYPE-ID>",
+  "gstNumber": "29ABCDE1234F1Z5",
+  "panNumber": "ABCDE1234F",
+  "primaryEmail": "dealer360.test@example.com",
+  "primaryPhone": "9876543210",
+  "currency": "INR"
+}
+
+###
+GET http://localhost:4004/dealer/DealerTypes
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "DEALER360 Test Motors",
+  "tradeName": "DEALER360 Motors",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "gstNumber": "29ABCDE1234F1Z5",
+  "panNumber": "ABCDE1234F",
+  "primaryEmail": "dealer360.test@example.com",
+  "primaryPhone": "9876543210",
+  "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+  "dealerId": "dc6c2a95-96fa-4b3d-9b02-326a41cae6bc"
+}
+
+###
+PATCH http://localhost:4004/dealer/Dealers(dc6c2a95-96fa-4b3d-9b02-326a41cae6bc)
+Content-Type: application/json
+
+{
+  "gstNumber": "29QWERT1234A1Z6",
+  "panNumber": "QWERT1234B"
+}
+
+###
+GET http://localhost:4004/dealer/Dealers(dc6c2a95-96fa-4b3d-9b02-326a41cae6bc)
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+  "dealerId": "dc6c2a95-96fa-4b3d-9b02-326a41cae6bc"
+}
+
+###
+POST http://localhost:4004/dealer/l1Approve
+Content-Type: application/json
+
+{
+  "dealerId": "dc6c2a95-96fa-4b3d-9b02-326a41cae6bc"
+}
+
+###
+POST http://localhost:4004/dealer/l2Approve
+Content-Type: application/json
+
+{
+  "dealerId": "dc6c2a95-96fa-4b3d-9b02-326a41cae6bc"
+}
+
+###
+GET http://localhost:4004/pricing/Dealers
+###
+GET http://localhost:4004/pricing/Products
+
+###
+###
+GET http://localhost:4004/pricing/ProductCategories
+
+###
+GET http://localhost:4004/master-data/ProductCategories
+
+###
+POST http://localhost:4004/master-data/ProductCategories
+Content-Type: application/json
+
+{
+  "code": "TRACTOR",
+  "name": "Tractors",
+  "description": "TAFE tractor products",
+  "isActive": true
+}
+
+###
+POST http://localhost:4004/master-data/Products
+Content-Type: application/json
+
+{
+  "productCode": "TRAC-001",
+  "productName": "DEALER360 50 HP Tractor",
+  "description": "50 HP agricultural tractor for dealer sales",
+  "category_ID": "8bfffffa-cbdd-4fd4-a3a8-be1f483fa344",
+  "unitOfMeasure": "EA",
+  "basePrice": 100000,
+  "currency": "INR",
+  "isActive": true
+}
+
+###
+POST http://localhost:4004/pricing/ProductPrices
+Content-Type: application/json
+
+{
+  "product_ID": "2a284e70-ac36-4d88-bdd0-1691d0c3123f",
+  "price": 100000,
+  "currency": "INR",
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "Base product price for pricing engine test"
+}
+
+###
+GET http://localhost:4004/pricing/PriceHistory
+
+###
+POST http://localhost:4004/pricing/DealerPrices
+Content-Type: application/json
+
+{
+  "dealer_ID": "dc6c2a95-96fa-4b3d-9b02-326a41cae6bc",
+  "product_ID": "2a284e70-ac36-4d88-bdd0-1691d0c3123f",
+  "price": 95000,
+  "currency": "INR",
+  "discountPercentage": 5,
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "Dealer-specific pricing test"
+}
+
+###
+GET http://localhost:4004/dealer/Dealers
+###
+GET http://localhost:4004/dealer/DealerTypes
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "DEALER360 Test Dealer",
+  "tradeName": "DEALER360 Test",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "gstNumber": "29QWERT1234A1Z6",
+  "panNumber": "QWERT1234B",
+  "primaryEmail": "dealer360@test.com",
+  "primaryPhone": "9876543210",
+  "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+  "dealerId": "0634c7a5-dbef-453e-9d6f-26e044df898a"
+}
+###
+POST http://localhost:4004/dealer/l1Approve
+Content-Type: application/json
+
+{
+  "dealerId": "0634c7a5-dbef-453e-9d6f-26e044df898a"
+}
+
+###
+POST http://localhost:4004/dealer/l2Approve
+Content-Type: application/json
+
+{
+  "dealerId": "0634c7a5-dbef-453e-9d6f-26e044df898a"
+}
+
+###
+GET http://localhost:4004/pricing/Products
+
+###
+GET http://localhost:4004/pricing/ProductPrices
+###
+GET http://localhost:4004/pricing/ProductPrices
+
+###
+POST http://localhost:4004/pricing/DealerPrices
+Content-Type: application/json
+
+{
+  "dealer_ID": "0634c7a5-dbef-453e-9d6f-26e044df898a",
+  "product_ID": "2a284e70-ac36-4d88-bdd0-1691d0c3123f",
+  "price": 95000,
+  "currency": "INR",
+  "discountPercentage": 5,
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "Dealer-specific pricing test"
+}
+
+###
+GET http://localhost:4004/pricing/PriceHistory
+
+###
+POST http://localhost:4004/pricing/QuantityPriceSlabs
+Content-Type: application/json
+
+{
+  "product_ID": "2a284e70-ac36-4d88-bdd0-1691d0c3123f",
+  "dealer_ID": "0634c7a5-dbef-453e-9d6f-26e044df898a",
+  "minQuantity": 100,
+  "discountPercentage": 10,
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "Quantity slab test"
+}
+
+###
+POST http://localhost:4004/pricing/calculateDealerPrice
+Content-Type: application/json
+
+{
+  "dealerId": "0634c7a5-dbef-453e-9d6f-26e044df898a",
+  "productId": "2a284e70-ac36-4d88-bdd0-1691d0c3123f",
+  "quantity": 100
+}
+
+###
+POST http://localhost:4004/pricing/calculateDealerPrice
+Content-Type: application/json
+
+{
+  "dealerId": "0634c7a5-dbef-453e-9d6f-26e044df898a",
+  "productId": "2a284e70-ac36-4d88-bdd0-1691d0c3123f",
+  "quantity": 10
+}
+
+###
+POST http://localhost:4004/pricing/calculateDealerPrice
+Content-Type: application/json
+
+{
+  "dealerId": "0634c7a5-dbef-453e-9d6f-26e044df898a",
+  "productId": "2a284e70-ac36-4d88-bdd0-1691d0c3123f",
+  "quantity": 10
+}
+
+###
+POST http://localhost:4004/pricing/calculateDealerPrice
+Content-Type: application/json
+
+{
+  "dealerId": "0634c7a5-dbef-453e-9d6f-26e044df898a",
+  "productId": "2a284e70-ac36-4d88-bdd0-1691d0c3123f",
+  "quantity": 100
+}
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "DEALER360 Test Dealer",
+  "tradeName": "Test Dealer",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "gstNumber": "29TESTD1234A1Z5",
+  "panNumber": "TESTD1234C",
+  "primaryEmail": "testdealer@dealer360.com",
+  "primaryPhone": "9876543210"
+}
+###
+POST http://localhost:4004/master-data/ProductCategories
+Content-Type: application/json
+
+{
+  "code": "TRACTOR",
+  "name": "Tractors",
+  "description": "DEALER360 Tractor Products",
+  "isActive": true
+}
+
+###
+HTTP/1.1 201 Created
+x-powered-by: Express
+x-correlation-id: 714d5684-d119-48de-966e-876fd4af885a
+odata-version: 4.0
+location: ProductCategories(ffb891f5-84f6-4ecd-9fa2-55b6335774b6)
+content-type: application/json; charset=utf-8
+content-length: 322
+date: Mon, 07 Sep 2026 13:29:49 GMT
+connection: close
+
+{
+  "@odata.context": "$metadata#ProductCategories/$entity",
+  "ID": "ffb891f5-84f6-4ecd-9fa2-55b6335774b6",
+  "createdAt": "2026-09-07T13:29:49.012Z",
+  "createdBy": "anonymous",
+  "modifiedAt": "2026-09-07T13:29:49.012Z",
+  "modifiedBy": "anonymous",
+  "code": "TRACTOR",
+  "name": "Tractors",
+  "description": "DEALER360 Tractor Products",
+  "isActive": true
+}
+
+###
+POST http://localhost:4004/master-data/Products
+Content-Type: application/json
+
+{
+  "productCode": "TRAC-001",
+  "productName": "DEALER360 50 HP Tractor",
+  "description": "DEALER360 50 HP Tractor",
+  "category_ID": "ffb891f5-84f6-4ecd-9fa2-55b6335774b6",
+  "unitOfMeasure": "EA",
+  "basePrice": 100000,
+  "currency": "INR",
+  "isActive": true
+}
+
+###
+POST http://localhost:4004/pricing/ProductPrices
+Content-Type: application/json
+
+{
+  "product_ID": "1f36846d-6b67-4b90-844e-74988216e8f6",
+  "price": 100000,
+  "currency": "INR",
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "Initial product price"
+}
+
+###
+POST http://localhost:4004/pricing/DealerPrices
+Content-Type: application/json
+
+{
+  "dealer_ID": "ec5a0bf5-7113-43d3-b5e4-accd45b5155d",
+  "product_ID": "1f36846d-6b67-4b90-844e-74988216e8f6",
+  "price": 95000,
+  "currency": "INR",
+  "discountPercentage": 5,
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "Negotiated dealer price"
+}
+
+###
+POST http://localhost:4004/pricing/QuantityPriceSlabs
+Content-Type: application/json
+
+{
+  "product_ID": "1f36846d-6b67-4b90-844e-74988216e8f6",
+  "dealer_ID": "ec5a0bf5-7113-43d3-b5e4-accd45b5155d",
+  "minQuantity": 100,
+  "discountPercentage": 10,
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "10% bulk discount for quantity 100 and above"
+}
+
+###
+POST http://localhost:4004/pricing/calculateDealerPrice
+Content-Type: application/json
+
+{
+  "dealerId": "ec5a0bf5-7113-43d3-b5e4-accd45b5155d",
+  "productId": "1f36846d-6b67-4b90-844e-74988216e8f6",
+  "quantity": 10
+}
+
+###
+POST http://localhost:4004/pricing/calculateDealerPrice
+Content-Type: application/json
+
+{
+  "dealerId": "ec5a0bf5-7113-43d3-b5e4-accd45b5155d",
+  "productId": "1f36846d-6b67-4b90-844e-74988216e8f6",
+  "quantity": 100
+}
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "DEALER360 Pricing Test Dealer",
+  "tradeName": "Pricing Test Dealer",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "gstNumber": "29PRICE1234A1Z5",
+  "panNumber": "PRICE1234D",
+  "primaryEmail": "pricingtest@dealer360.com",
+  "primaryPhone": "9876543211"
+}
+
+###
+POST http://localhost:4004/master-data/ProductCategories
+Content-Type: application/json
+
+{
+  "code": "PRICING",
+  "name": "Pricing Test Products",
+  "description": "DEALER360 Pricing Test Category",
+  "isActive": true
+}
+
+###
+POST http://localhost:4004/master-data/Products
+Content-Type: application/json
+
+{
+  "productCode": "PRICE-001",
+  "productName": "DEALER360 Pricing Test Product",
+  "description": "Pricing hardening test product",
+  "category_ID": "<CATEGORY_ID>",
+  "unitOfMeasure": "EA",
+  "basePrice": 100000,
+  "currency": "INR",
+  "isActive": true
+}
+
+###
+POST http://localhost:4004/pricing/ProductPrices
+Content-Type: application/json
+
+{
+  "product_ID": "54064034-4c2b-43d3-aa15-e20572b7a906",
+  "price": 100000,
+  "currency": "INR",
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "Initial pricing hardening test price"
+}
+###
+POST http://localhost:4004/pricing/ProductPrices
+Content-Type: application/json
+
+{
+  "product_ID": "54064034-4c2b-43d3-aa15-e20572b7a906",
+  "price": 95000,
+  "currency": "INR",
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "Intentional overlapping price test"
+}
+
+###
+PATCH http://localhost:4004/pricing/ProductPrices(9f8bc0ea-a061-4e29-8781-e5d29278aa47)
+Content-Type: application/json
+
+{
+  "validTo": "2026-09-30"
+}
+
+###
+POST http://localhost:4004/pricing/ProductPrices
+Content-Type: application/json
+
+{
+  "product_ID": "54064034-4c2b-43d3-aa15-e20572b7a906",
+  "price": 105000,
+  "currency": "INR",
+  "validFrom": "2026-10-01",
+  "status": "ACTIVE",
+  "remarks": "Future non-overlapping product price"
+}
+
+###
+GET http://localhost:4004/dealer/Dealers
+
+###
+POST http://localhost:4004/pricing/DealerPrices
+Content-Type: application/json
+
+{
+  "dealer_ID": "7ff23c5d-56de-48c9-ab5d-017c60f5f12a",
+  "product_ID": "54064034-4c2b-43d3-aa15-e20572b7a906",
+  "price": 95000,
+  "currency": "INR",
+  "discountPercentage": 5,
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "Negotiated dealer price"
+}
+
+###
+POST http://localhost:4004/pricing/DealerPrices
+Content-Type: application/json
+
+{
+  "dealer_ID": "7ff23c5d-56de-48c9-ab5d-017c60f5f12a",
+  "product_ID": "54064034-4c2b-43d3-aa15-e20572b7a906",
+  "price": 92000,
+  "currency": "INR",
+  "discountPercentage": 8,
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "Intentional overlapping dealer price test"
+}
+###
+PATCH http://localhost:4004/pricing/DealerPrices(4ff218e7-f3f0-486d-99c6-13b4b0e6040e)
+Content-Type: application/json
+
+{
+  "validTo": "2026-09-30"
+}
+
+###
+POST http://localhost:4004/pricing/DealerPrices
+Content-Type: application/json
+
+{
+  "dealer_ID": "7ff23c5d-56de-48c9-ab5d-017c60f5f12a",
+  "product_ID": "54064034-4c2b-43d3-aa15-e20572b7a906",
+  "price": 92000,
+  "currency": "INR",
+  "discountPercentage": 8,
+  "validFrom": "2026-10-01",
+  "status": "ACTIVE",
+  "remarks": "Future non-overlapping dealer price"
+}
+
+###
+POST http://localhost:4004/pricing/QuantityPriceSlabs
+Content-Type: application/json
+
+{
+  "product_ID": "54064034-4c2b-43d3-aa15-e20572b7a906",
+  "dealer_ID": "7ff23c5d-56de-48c9-ab5d-017c60f5f12a",
+  "minQuantity": 100,
+  "discountPercentage": 10,
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "10% bulk discount for quantity 100 and above"
+}
+
+###
+POST http://localhost:4004/pricing/QuantityPriceSlabs
+Content-Type: application/json
+
+{
+  "product_ID": "54064034-4c2b-43d3-aa15-e20572b7a906",
+  "dealer_ID": "7ff23c5d-56de-48c9-ab5d-017c60f5f12a",
+  "minQuantity": 100,
+  "discountPercentage": 15,
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "Intentional overlapping quantity slab test"
+}
+
+###
+POST http://localhost:4004/pricing/QuantityPriceSlabs
+Content-Type: application/json
+
+{
+  "product_ID": "54064034-4c2b-43d3-aa15-e20572b7a906",
+  "dealer_ID": "7ff23c5d-56de-48c9-ab5d-017c60f5f12a",
+  "minQuantity": 1,
+  "maxQuantity": 99,
+  "discountPercentage": 0,
+  "validFrom": "2026-09-07",
+  "status": "ACTIVE",
+  "remarks": "Standard quantity range 1 to 99"
+}
+
+###
+POST http://localhost:4004/pricing/calculateDealerPrice
+Content-Type: application/json
+
+{
+  "dealerId": "7ff23c5d-56de-48c9-ab5d-017c60f5f12a",
+  "productId": "54064034-4c2b-43d3-aa15-e20572b7a906",
+  "quantity": 10
+}
+###
+POST http://localhost:4004/pricing/calculateDealerPrice
+Content-Type: application/json
+
+{
+  "dealerId": "7ff23c5d-56de-48c9-ab5d-017c60f5f12a",
+  "productId": "54064034-4c2b-43d3-aa15-e20572b7a906",
+  "quantity": 100
+}
+
+###
+GET http://localhost:4004/credit/Dealers(7ff23c5d-56de-48c9-ab5d-017c60f5f12a)
+###
+GET http://localhost:4004/dealer/Dealers(7ff23c5d-56de-48c9-ab5d-017c60f5f12a)
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "DEALER360 Credit Test Dealer",
+  "tradeName": "Credit Test Dealer",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "gstNumber": "29CREDIT1234A1Z5",
+  "panNumber": "CREDIT1234E",
+  "primaryEmail": "credittest@dealer360.com",
+  "primaryPhone": "9876543212"
+}
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "DEALER360 Credit Test Dealer",
+  "tradeName": "Credit Test Dealer",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "gstNumber": "29ABCDE1234F1Z5",
+  "panNumber": "ABCDE1234F",
+  "primaryEmail": "credittest@dealer360.com",
+  "primaryPhone": "9876543212"
+}
+
+###
+POST http://localhost:4004/credit/DealerCredits
+Content-Type: application/json
+
+{
+  "dealer_ID": "24e457fd-0ad9-41ba-9b88-097614c3abd4",
+  "creditLimit": 100000,
+  "usedCredit": 0,
+  "availableCredit": 100000,
+  "currency": "INR",
+  "isBlocked": false,
+  "remarks": "DEALER360 Credit Test Facility"
+}
+
+###
+GET http://localhost:4004/credit/$metadata
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "DEALER360 Credit Test Dealer",
+  "tradeName": "Credit Test Dealer",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "gstNumber": "29ABCDE1234F1Z5",
+  "panNumber": "ABCDE1234F",
+  "primaryEmail": "credittest@dealer360.com",
+  "primaryPhone": "9876543212"
+}
+###
+POST http://localhost:4004/credit/DealerCredits
+Content-Type: application/json
+
+{
+  "dealer_ID": "0c0c0318-3f6b-44d8-b2da-4ce8d96f3489",
+  "creditLimit": 100000,
+  "usedCredit": 0,
+  "availableCredit": 100000,
+  "currency": "INR",
+  "isBlocked": false,
+  "remarks": "DEALER360 Credit Test Facility"
+}
+
+###
+POST http://localhost:4004/credit/checkCredit
+Content-Type: application/json
+
+{
+  "dealerId": "0c0c0318-3f6b-44d8-b2da-4ce8d96f3489",
+  "amount": 25000
+}
+
+###
+POST http://localhost:4004/credit/allocateCredit
+Content-Type: application/json
+
+{
+  "dealerId": "0c0c0318-3f6b-44d8-b2da-4ce8d96f3489",
+  "amount": 25000,
+  "referenceType": "TEST",
+  "referenceId": "CREDIT-TEST-001",
+  "description": "DEALER360 credit allocation test"
+}
+
+###
+GET http://localhost:4004/credit/CreditTransactions
+
+###
+POST http://localhost:4004/credit/allocateCredit
+Content-Type: application/json
+
+{
+  "dealerId": "0c0c0318-3f6b-44d8-b2da-4ce8d96f3489",
+  "amount": 80000,
+  "referenceType": "TEST",
+  "referenceId": "CREDIT-TEST-002",
+  "description": "DEALER360 insufficient credit test"
+}
+
+
+###
+POST http://localhost:4004/credit/releaseCredit
+Content-Type: application/json
+
+{
+  "dealerId": "0c0c0318-3f6b-44d8-b2da-4ce8d96f3489",
+  "amount": 25000,
+  "referenceType": "TEST",
+  "referenceId": "CREDIT-TEST-003",
+  "description": "DEALER360 credit release test"
+}
+
+###
+GET http://localhost:4004/credit/CreditTransactions
+
+###
+POST http://localhost:4004/credit/blockCredit
+Content-Type: application/json
+
+{
+  "dealerId": "0c0c0318-3f6b-44d8-b2da-4ce8d96f3489",
+  "reason": "DEALER360 credit block test"
+}
+
+###
+POST http://localhost:4004/credit/checkCredit
+Content-Type: application/json
+
+{
+  "dealerId": "0c0c0318-3f6b-44d8-b2da-4ce8d96f3489",
+  "amount": 10000
+}
+
+###
+POST http://localhost:4004/credit/unblockCredit
+Content-Type: application/json
+
+{
+  "dealerId": "0c0c0318-3f6b-44d8-b2da-4ce8d96f3489"
+}
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "DEALER360 Test Motors",
+  "tradeName": "Test Motors",
+  "dealerType_ID": "<DEALER_TYPE_ID>",
+  "status": "ACTIVE",
+  "gstNumber": "29ABCDE1234F1Z5",
+  "panNumber": "ABCDE1234F",
+  "primaryEmail": "test@dealer360.com",
+  "primaryPhone": "9876543210",
+  "currency": "INR"
+}
+###
+GET http://localhost:4004/master-data/DealerTypes
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "DEALER360 Test Motors",
+  "tradeName": "Test Motors",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "status": "ACTIVE",
+  "gstNumber": "29ABCDE1234F1Z5",
+  "panNumber": "ABCDE1234F",
+  "primaryEmail": "test@dealer360.com",
+  "primaryPhone": "9876543210",
+  "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/Dealers(92305225-d1ba-4daa-9473-cece73782d51)/submitDealer
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+  "dealerId": "92305225-d1ba-4daa-9473-cece73782d51"
+}
+
+###
+GET http://localhost:4004/dealer/Dealers(92305225-d1ba-4daa-9473-cece73782d51)
+
+###
+GET http://localhost:4004/dealer/$metadata
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+    "dealerId": "92305225-d1ba-4daa-9473-cece73782d51"
+}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+    "dealerId": "92305225-d1ba-4daa-9473-cece73782d51"
+}
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+    "legalName": "DEALER360 Test Motors",
+    "tradeName": "Test Motors",
+    "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+    "gstNumber": "29ABCDE1234F1Z5",
+    "panNumber": "ABCDE1234F",
+    "primaryEmail": "test@dealer360.com",
+    "primaryPhone": "9876543210",
+    "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+    "dealerId": "08767b49-02a2-4e91-80b8-86d11df64e68"
+}
+
+###
+POST http://localhost:4004/dealer/l1Approve
+Content-Type: application/json
+
+{
+  "dealerId": "08767b49-02a2-4e91-80b8-86d11df64e68"
+}
+
+###
+POST http://localhost:4004/dealer/l2Approve
+Content-Type: application/json
+
+{
+  "dealerId": "08767b49-02a2-4e91-80b8-86d11df64e68"
+}
+
+###
+GET http://localhost:4004/dealer/OnboardingApprovals?$filter=dealer_ID eq 08767b49-02a2-4e91-80b8-86d11df64e68
+###
+GET http://localhost:4004/dealer/OnboardingApprovals?$filter=dealer_ID eq "08767b49-02a2-4e91-80b8-86d11df64e68\
+
+###
+GET http://localhost:4004/dealer/OnboardingApprovals?$filter=dealer_ID%20eq%20'08767b49-02a2-4e91-80b8-86d11df64e68'
+
+###
+GET http://localhost:4004/dealer/DealerStatusHistory
+
+###
+GET http://localhost:4004/dealer/Dealers
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "DEALER360 PR Test Motors",
+  "tradeName": "PR Test Motors",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "gstNumber": "29PRTST1234F1Z5",
+  "panNumber": "PRTST1234F",
+  "primaryEmail": "prtest@dealer360.com",
+  "primaryPhone": "9876543210",
+  "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+  "dealerId": "2196c69c-519a-43b8-95c8-0769e6f84009"
+}
+
+###
+POST http://localhost:4004/dealer/l1Approve
+Content-Type: application/json
+
+{
+  "dealerId": "2196c69c-519a-43b8-95c8-0769e6f84009"
+}
+
+###
+POST http://localhost:4004/dealer/l2Approve
+Content-Type: application/json
+
+{
+  "dealerId": "2196c69c-519a-43b8-95c8-0769e6f84009"
+}
+
+###
+GET http://localhost:4004/master-data/ProductCategories
+
+###
+POST http://localhost:4004/master-data/ProductCategories
+Content-Type: application/json
+
+{
+  "code": "AUTO",
+  "name": "Automotive Products",
+  "description": "Products used for dealer vehicle operations",
+  "isActive": true
+}
+
+###
+POST http://localhost:4004/master-data/Products
+Content-Type: application/json
+
+{
+  "productCode": "ENG-001",
+  "productName": "Engine Assembly",
+  "description": "Automotive engine assembly",
+  "category_ID": "d693c756-8f37-4069-a861-36b35651beb8",
+  "unitOfMeasure": "EA",
+  "basePrice": 75000,
+  "currency": "INR",
+  "isActive": true
+}
+
+###
+POST http://localhost:4004/purchase-requisition/PurchaseRequisitions
+Content-Type: application/json
+
+{
+  "dealer_ID": "2196c69c-519a-43b8-95c8-0769e6f84009",
+  "requestedDate": "2026-09-07",
+  "requiredDate": "2026-09-20",
+  "currency": "INR",
+  "remarks": "PR test for Engine Assembly",
+  "items": [
+    {
+      "itemNumber": 10,
+      "product_ID": "3ffc478c-4bc8-4401-84c1-73ff424503c7",
+      "quantity": 5,
+      "unitOfMeasure": "EA",
+      "requestedUnitPrice": 75000,
+      "currency": "INR",
+      "requiredDate": "2026-09-20",
+      "remarks": "Initial engine requirement"
+    }
+  ]
+}
+
+###
+GET http://localhost:4004/purchase-requisition/PurchaseRequisitions
+
+###
+GET http://localhost:4004/purchase-requisition/PurchaseRequisitionItems
+
+###
+GET http://localhost:4004/purchase-requisition/PurchaseRequisitionStatusHistory
+
+###
+GET http://localhost:4004/purchase-requisition/PurchaseRequisitions
+
+###
+GET http://localhost:4004/purchase-requisition/PurchaseRequisitionItems
+
+###
+POST http://localhost:4004/purchase-requisition/submitPurchaseRequisition
+Content-Type: application/json
+
+{
+  "requisitionId": "e5f398ad-a631-46e3-b1d3-fec642078c40"
+}
+###
+POST http://localhost:4004/purchase-requisition/submitPurchaseRequisition
+Content-Type: application/json
+
+{
+  "requisitionId": "e5f398ad-a631-46e3-b1d3-fec642078c40"
+}
+
+###
+GET http://localhost:4004/purchase-requisition/PurchaseRequisitions
+###
+POST http://localhost:4004/purchase-requisition-approval/startApproval
+Content-Type: application/json
+
+{
+    "requisitionId": "e5f398ad-a631-46e3-b1d3-fec642078c40"
+}
+###
+GET http://localhost:4004/purchase-requisition/PurchaseRequisitions
+
+###
+GET http://localhost:4004/dealer/Dealers
+
+###
+GET http://localhost:4004/master-data/Products
+
+###
+GET http://localhost:4004/master-data/DealerTypes
+
+###
+GET http://localhost:4004/master-data/PaymentTerms
+
+###
+GET http://localhost:4004/master-data/Regions
+
+###
+GET http://localhost:4004/master-data/States
+###
+GET http://localhost:4004/master-data/States
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "DEALER360 Test Motors Private Limited",
+  "tradeName": "DEALER360 Test Motors",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "gstNumber": "29ABCDE1234F1Z5",
+  "panNumber": "ABCDE1234F",
+  "registrationNumber": "REG-DEALER360-001",
+  "registrationDate": "2026-09-07",
+  "primaryEmail": "dealer360.test@example.com",
+  "primaryPhone": "9876543210",
+  "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+  "state_ID": "10000000-0000-0000-0000-000000000001",
+  "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+  "creditLimit": 500000,
+  "currency": "INR",
+  "bankName": "DEALER360 Test Bank",
+  "bankBranch": "Bengaluru",
+  "bankAccountNumber": "123456789012",
+  "ifscCode": "HDFC0001234",
+  "onboardingRemarks": "Stage 8 PR Approval test dealer"
+}
+
+###
+POST http://localhost:4004/dealer/Dealers(9e7fb594-deee-4be0-90c4-c3bfd272d275)/submitDealer
+Content-Type: application/json
+
+{}
+###
+POST http://localhost:4004/dealer/Dealers(9e7fb594-deee-4be0-90c4-c3bfd272d275)/DealerService.submitDealer
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:4004/dealer/Dealers(9e7fb594-deee-4be0-90c4-c3bfd272d275)/DealerService.submitDealer
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+  "dealerId": "9e7fb594-deee-4be0-90c4-c3bfd272d275"
+}
+
+###
+POST http://localhost:4004/dealer/l1Approve
+Content-Type: application/json
+
+{
+  "dealerId": "9e7fb594-deee-4be0-90c4-c3bfd272d275"
+}
+
+###
+POST http://localhost:4004/dealer/l2Approve
+Content-Type: application/json
+
+{
+  "dealerId": "9e7fb594-deee-4be0-90c4-c3bfd272d275"
+}
+
+###
+GET http://localhost:4004/master-data/ProductCategories
+
+###
+POST http://localhost:4004/master-data/ProductCategories
+Content-Type: application/json
+
+{
+  "code": "ENGINE",
+  "name": "Engine Components",
+  "description": "Engine and powertrain components",
+  "isActive": true
+}
+
+###
+POST http://localhost:4004/master-data/Products
+Content-Type: application/json
+
+{
+  "productCode": "ENG-001",
+  "productName": "Engine Assembly",
+  "description": "DEALER360 standard engine assembly",
+  "category_ID": "1de4d47f-8927-4db0-bebd-d21ae80f078a",
+  "unitOfMeasure": "EA",
+  "basePrice": 250000,
+  "currency": "INR",
+  "isActive": true
+}
+
+###
+POST http://localhost:4004/purchase-requisition/PurchaseRequisitions
+Content-Type: application/json
+
+{
+  "dealer_ID": "9e7fb594-deee-4be0-90c4-c3bfd272d275",
+  "requestedDate": "2026-09-07",
+  "requiredDate": "2026-09-30",
+  "currency": "INR",
+  "remarks": "Stage 8 BPA PR approval test"
+}
+
+###
+POST http://localhost:4004/purchase-requisition/PurchaseRequisitions
+Content-Type: application/json
+
+{
+  "dealer_ID": "9e7fb594-deee-4be0-90c4-c3bfd272d275",
+  "requestedDate": "2026-09-07",
+  "requiredDate": "2026-09-30",
+  "currency": "INR",
+  "remarks": "Stage 8 BPA PR approval test",
+  "items": [
+    {
+      "itemNumber": 10,
+      "product_ID": "d24c5fd8-fb1b-42b5-9a29-6592e7838bb9",
+      "quantity": 2,
+      "unitOfMeasure": "EA",
+      "requestedUnitPrice": 250000,
+      "currency": "INR",
+      "requiredDate": "2026-09-30",
+      "remarks": "Engine Assembly requirement"
+    }
+  ]
+}
+###
+POST http://localhost:4004/purchase-requisition/submitPurchaseRequisition
+Content-Type: application/json
+
+{
+  "requisitionId": "4d5f9466-9e53-421c-a72f-421d72c6567b"
+}
+
+
+###
+POST http://localhost:4004/purchase-requisition-approval/startApproval
+Content-Type: application/json
+
+{
+  "requisitionId": "4d5f9466-9e53-421c-a72f-421d72c6567b"
+}
+
+###
+GET http://localhost:4004/purchase-requisition-approval/ApprovalRequests
+
+###
+GET http://localhost:4004/purchase-requisition-approval/ApprovalRequests
+
+###
+GET http://localhost:4004/purchase-requisition/PurchaseRequisitions
+
+###
+GET http://localhost:4004/integration/OutboxEvents
+
+###
+GET http://localhost:4004/integration/OutboxEvents
+
+###
+GET /integration/OutboxEvents
+
+###
+GET http://localhost:4004/integration/OutboxEvents
+
+###
+GET http://localhost:4004/integration/OutboxEvents
+
+###
+GET http://localhost:4004/purchase-requisition/PurchaseRequisitions
+
+###
+GET http://localhost:4004/master/Dealers
+
+### Regions
+GET http://localhost:4004/master-data/Regions
+
+
+### States
+GET http://localhost:4004/master-data/States
+
+
+### Payment Terms
+GET http://localhost:4004/master-data/PaymentTerms
+
+###
+GET http://localhost:4004/master-data/Regions
+
+###
+GET http://localhost:4004/master-data/States
+
+###
+GET http://localhost:4004/master-data/DealerTypes
+
+###
+### CREATE DEALER
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+    "legalName": "DEALER360 Test Motors Private Limited",
+    "tradeName": "DEALER360 Test Motors",
+    "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+    "gstNumber": "29ABCDE1234F1Z5",
+    "panNumber": "ABCDE1234F",
+    "registrationNumber": "REG-DEALER360-001",
+    "registrationDate": "2026-09-07",
+    "primaryEmail": "dealer360.test@example.com",
+    "primaryPhone": "9876543210",
+    "alternatePhone": "9876543211",
+    "website": "https://dealer360.example.com",
+    "annualTurnover": 50000000,
+    "employeeCount": 100,
+    "yearEstablished": 2015,
+    "region_ID": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "state_ID": "10000000-0000-0000-0000-000000000001",
+    "paymentTerms_ID": "50000000-0000-0000-0000-000000000003",
+    "creditLimit": 500000,
+    "currency": "INR",
+    "bankName": "DEALER360 Test Bank",
+    "bankBranch": "Bengaluru Main Branch",
+    "bankAccountNumber": "123456789012",
+    "ifscCode": "TEST0001234",
+    "onboardingRemarks": "Stage 8 Outbox integration test"
+}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+    "dealerId": "5aa0c7be-29bf-490e-b8f6-dcfcc925cc45"
+}
+
+###
+POST http://localhost:4004/dealer/l1Approve
+Content-Type: application/json
+
+{
+    "dealerId": "5aa0c7be-29bf-490e-b8f6-dcfcc925cc45"
+}
+
+###
+POST http://localhost:4004/dealer/l2Approve
+Content-Type: application/json
+
+{
+    "dealerId": "5aa0c7be-29bf-490e-b8f6-dcfcc925cc45"
+}
+
+###
+POST http://localhost:4004/master-data/ProductCategories
+Content-Type: application/json
+
+{
+    "code": "ENGINE",
+    "name": "Engine Components",
+    "description": "Engine and powertrain components",
+    "isActive": true
+}
+
+###
+POST http://localhost:4004/master-data/Products
+Content-Type: application/json
+
+{
+    "productCode": "ENG-001",
+    "productName": "Engine Assembly",
+    "description": "Complete engine assembly for dealer procurement",
+    "category_ID": "1c102fbc-8919-4c79-97e9-cd3f6b8e50ad",
+    "unitOfMeasure": "EA",
+    "basePrice": 250000,
+    "currency": "INR",
+    "isActive": true
+}
+
+###
+POST http://localhost:4004/purchase-requisition/PurchaseRequisitions
+Content-Type: application/json
+
+{
+    "dealer_ID": "5aa0c7be-29bf-490e-b8f6-dcfcc925cc45",
+    "requestedDate": "2026-09-07",
+    "requiredDate": "2026-09-20",
+    "currency": "INR",
+    "remarks": "Stage 8 PR approval and Outbox integration test",
+    "items": [
+        {
+            "itemNumber": 10,
+            "product_ID": "96f5a6a4-489a-4f66-a724-9b973d54e27f",
+            "quantity": 2,
+            "unitOfMeasure": "EA",
+            "requestedUnitPrice": 250000,
+            "currency": "INR",
+            "requiredDate": "2026-09-20",
+            "remarks": "Engine Assembly for dealer procurement"
+        }
+    ]
+}
+
+###
+POST http://localhost:4004/purchase-requisition/submitPurchaseRequisition
+Content-Type: application/json
+
+{
+    "requisitionId": "396f1ecf-8228-440a-a1fa-7ed10e93ad15"
+}
+
+###
+POST http://localhost:4004/purchase-requisition-approval/startApproval
+Content-Type: application/json
+
+{
+    "requisitionId": "396f1ecf-8228-440a-a1fa-7ed10e93ad15"
+}
+
+###
+GET http://localhost:4004/integration/OutboxEvents
+
+###
+POST http://localhost:4004/dealer/Dealers
+Content-Type: application/json
+
+{
+  "legalName": "DEALER360 PR Test Dealer",
+  "tradeName": "PR Test Dealer",
+  "dealerType_ID": "11111111-1111-1111-1111-111111111111",
+  "gstNumber": "29PRTST1234F1Z5",
+  "panNumber": "PRTST1234F",
+  "primaryEmail": "prtest@dealer360.com",
+  "primaryPhone": "9876543210",
+  "currency": "INR"
+}
+
+###
+POST http://localhost:4004/dealer/submitDealer
+Content-Type: application/json
+
+{
+  "dealerId": "220ed9f2-9288-4239-b84c-db695bdf45e2"
+}
+
+
+###
+POST http://localhost:4004/master-data/ProductCategories
+Content-Type: application/json
+
+{
+  "code": "ENGINE",
+  "name": "Engine Components",
+  "description": "Engine and powertrain components",
+  "isActive": true
+}
+
+###
+POST http://localhost:4004/master-data/Products
+Content-Type: application/json
+
+{
+  "productCode": "ENG-001",
+  "productName": "Engine Assembly",
+  "description": "DEALER360 standard engine assembly",
+  "category_ID": "fb455662-1ff7-4b46-822d-fec49efd0ddc",
+  "unitOfMeasure": "EA",
+  "basePrice": 250000,
+  "currency": "INR",
+  "isActive": true
+}
+
+###
+POST http://localhost:4004/purchase-requisition/PurchaseRequisitions
+Content-Type: application/json
+
+{
+  "dealer_ID": "220ed9f2-9288-4239-b84c-db695bdf45e2",
+  "requestedDate": "2026-09-08",
+  "requiredDate": "2026-09-30",
+  "currency": "INR",
+  "remarks": "DEALER360 PR approval test",
+  "items": [
+    {
+      "itemNumber": 10,
+      "product_ID": "6d4ce755-79e6-404a-b59c-f3f8a0bd6e94",
+      "quantity": 2,
+      "unitOfMeasure": "EA",
+      "requestedUnitPrice": 250000,
+      "currency": "INR",
+      "requiredDate": "2026-09-30",
+      "remarks": "Engine Assembly requirement"
+    }
+  ]
+}
+
+###
+POST http://localhost:4004/dealer/l2Approve
+Content-Type: application/json
+
+{
+  "dealerId": "220ed9f2-9288-4239-b84c-db695bdf45e2"
+}
+
+###
+GET http://localhost:4004/purchase-requisition-approval/ApprovalRequests
+###
+GET http://localhost:4004/purchase-requisition/PurchaseRequisitions
+
+###
+POST http://localhost:4004/integration/OutboxEvents
+Content-Type: application/json
+
+{
+    "eventType": "TEST_EVENT",
+    "aggregateType": "TEST",
+    "aggregateId": "TEST-001",
+    "eventVersion": 1,
+    "status": "PENDING",
+    "payload": "{\"message\":\"DEALER360 outbox processor test\"}",
+    "correlationId": "TEST-CORRELATION-001",
+    "idempotencyKey": "TEST-IDEMPOTENCY-001",
+    "destination": "TEST_DESTINATION",
+    "retryCount": 0,
+    "maxRetries": 5,
+    "createdByService": "TEST"
+}
+
+###
+GET http://localhost:4004/purchase-order/PurchaseOrders
+
+###
+GET http://localhost:4004/fulfillment/Fulfillments
+
+###
+GET http://localhost:4004/fulfillment/FulfillmentItems
+###
+GET http://localhost:4004/fulfillment/FulfillmentStatusHistory
+
+###
+GET http://localhost:4004/dealer/Dealers
+
+$$###
+###
+GET http://localhost:4004/master-data/Products
+
+###
+GET http://localhost:4004/dealer/Dealers?$filter=ID eq 60000000-0000-0000-0000-000000000001
+
+###
+GET http://localhost:4004/dealer/Dealers(60000000-0000-0000-0000-000000000001)
+
+###
+GET http://localhost:4004/master-data/Products(71000000-0000-0000-0000-000000000001)
+###
+GET http://localhost:4004/credit/DealerCredits(80000000-0000-0000-0000-000000000001)
+
+###
+POST http://localhost:4004/purchase-order/PurchaseOrders
+Content-Type: application/json
+
+{
+  "purchaseOrderNumber": "PO-D360-FUL-001",
+  "dealer_ID": "60000000-0000-0000-0000-000000000001",
+  "status": "ALLOCATED",
+  "orderDate": "2026-09-08",
+  "requestedDeliveryDate": "2026-09-15",
+  "currency": "INR",
+  "subtotal": 2500000,
+  "taxAmount": 0,
+  "totalAmount": 2500000,
+  "creditChecked": true,
+  "creditBlocked": false,
+  "remarks": "Fulfillment lifecycle development test"
+}
+
+
+###
+POST http://localhost:4004/purchase-order/PurchaseOrderItems
+Content-Type: application/json
+
+{
+  "purchaseOrder_ID": "8ee6307c-bf1c-403b-82af-79bdd6aa906c",
+  "itemNumber": 10,
+  "product_ID": "71000000-0000-0000-0000-000000000001",
+  "quantity": 1,
+  "unitOfMeasure": "EA",
+  "unitPrice": 2500000,
+  "discountPercentage": 0,
+  "netAmount": 2500000,
+  "taxPercentage": 0,
+  "taxAmount": 0,
+  "totalAmount": 2500000,
+  "currency": "INR",
+  "requestedDeliveryDate": "2026-09-15",
+  "remarks": "Fulfillment lifecycle test item"
+}
+###
+POST http://localhost:4004/fulfillment/createFulfillment
+Content-Type: application/json
+
+{
+  "purchaseOrderId": "8ee6307c-bf1c-403b-82af-79bdd6aa906c"
+}
+
+###
+POST http://localhost:4004/fulfillment/createFulfillment
+Content-Type: application/json
+
+{
+  "purchaseOrderId": "8ee6307c-bf1c-403b-82af-79bdd6aa906c"
+}
+###
+POST http://localhost:4004/purchase-order/PurchaseOrders
+Content-Type: application/json
+
+{
+  "purchaseOrderNumber": "PO-D360-FUL-001",
+  "dealer_ID": "60000000-0000-0000-0000-000000000001",
+  "status": "ALLOCATED",
+  "orderDate": "2026-09-08",
+  "requestedDeliveryDate": "2026-09-15",
+  "currency": "INR",
+  "subtotal": 2500000,
+  "taxAmount": 0,
+  "totalAmount": 2500000,
+  "creditChecked": true,
+  "creditBlocked": false,
+  "remarks": "Fulfillment lifecycle development test"
+}
+###
+POST http://localhost:4004/purchase-order/PurchaseOrderItems
+Content-Type: application/json
+
+{
+  "purchaseOrder_ID": "b3e3a980-8fdb-440b-adee-b2c50b3395ee",
+  "itemNumber": 10,
+  "product_ID": "71000000-0000-0000-0000-000000000001",
+  "quantity": 1,
+  "unitOfMeasure": "EA",
+  "unitPrice": 2500000,
+  "discountPercentage": 0,
+  "netAmount": 2500000,
+  "taxPercentage": 0,
+  "taxAmount": 0,
+  "totalAmount": 2500000,
+  "currency": "INR",
+  "requestedDeliveryDate": "2026-09-15",
+  "remarks": "Fulfillment lifecycle test item"
+}
+
+
+###
+POST http://localhost:4004/fulfillment/createFulfillment
+Content-Type: application/json
+
+{
+  "purchaseOrderId": "b3e3a980-8fdb-440b-adee-b2c50b3395ee"
+}
+
+###
+POST http://localhost:4004/fulfillment/dispatchFulfillment
+Content-Type: application/json
+
+{
+  "fulfillmentId": "72ef4dab-3694-49d9-9682-c20b126a90cf",
+  "carrierName": "DEALER360 Logistics",
+  "trackingNumber": "TRK-2026-000001",
+  "shipmentReference": "SHIP-2026-000001"
+}
+
+
+###
+POST http://localhost:4004/fulfillment/deliverFulfillment
+Content-Type: application/json
+
+{
+  "fulfillmentId": "72ef4dab-3694-49d9-9682-c20b126a90cf",
+  "deliveryNoteNumber": "DN-2026-000001",
+  "deliveryRemarks": "Vehicle delivered successfully to dealer."
+}
+
+###
+POST http://localhost:4004/fulfillment/invoiceFulfillment
+Content-Type: application/json
+
+{
+  "fulfillmentId": "72ef4dab-3694-49d9-9682-c20b126a90cf",
+  "invoiceNumber": "INV-2026-000001"
+}
+
+###
+POST http://localhost:4004/fulfillment/closeFulfillment
+Content-Type: application/json
+
+{
+  "fulfillmentId": "72ef4dab-3694-49d9-9682-c20b126a90cf"
+}
+
+###
+GET http://localhost:4004/integration/OutboxEvents
+
+
+###
+POST http://localhost:4004/purchase-requisition/PurchaseRequisitions
+Content-Type: application/json
+
+{
+  "requisitionNumber": "PR-D360-OUTBOX-001",
+  "dealer_ID": "60000000-0000-0000-0000-000000000001",
+  "requestedBy": "SYSTEM",
+  "requestedDate": "2026-09-08",
+  "requiredDate": "2026-09-15",
+  "currency": "INR",
+  "remarks": "Outbox processor integration test"
+}
+
+###
+POST http://localhost:4004/purchase-requisition/PurchaseRequisitions
+Content-Type: application/json
+
+{
+  "requisitionNumber": "PR-D360-OUTBOX-001",
+  "dealer_ID": "60000000-0000-0000-0000-000000000001",
+  "requestedDate": "2026-09-08",
+  "requiredDate": "2026-09-15",
+  "currency": "INR",
+  "remarks": "Outbox processor integration test"
+}
+
+###
+POST http://localhost:4004/purchase-requisition/PurchaseRequisitions
+Content-Type: application/json
+
+{
+  "requisitionNumber": "PR-D360-OUTBOX-001",
+  "dealer_ID": "60000000-0000-0000-0000-000000000001",
+  "requestedDate": "2026-09-08",
+  "requiredDate": "2026-09-15",
+  "currency": "INR",
+  "remarks": "Outbox processor integration test",
+  "items": [
+    {
+      "itemNumber": 10,
+      "product_ID": "71000000-0000-0000-0000-000000000001",
+      "quantity": 1,
+      "unitOfMeasure": "EA",
+      "requestedUnitPrice": 2500000,
+      "estimatedAmount": 2500000,
+      "currency": "INR",
+      "requiredDate": "2026-09-15",
+      "remarks": "Outbox processor integration test item"
+    }
+  ]
+}
+###
+POST http://localhost:4004/purchase-requisition/submitPurchaseRequisition
+Content-Type: application/json
+
+{
+  "requisitionId": "6bcb2f49-d1ed-4c58-84e9-b89e744aa633"
+}
+
+###
+POST http://localhost:4004/purchase-requisition-approval/startApproval
+Content-Type: application/json
+
+{
+  "requisitionId": "6bcb2f49-d1ed-4c58-84e9-b89e744aa633"
+}
+
+###
+GET http://localhost:4004/integration/OutboxEvents
+
+###
+POST http://localhost:4004/purchase-requisition/PurchaseRequisitions
+Content-Type: application/json
+
+{
+  "requisitionNumber": "PR-D360-OUTBOX-002",
+  "dealer_ID": "60000000-0000-0000-0000-000000000001",
+  "requestedDate": "2026-09-08",
+  "requiredDate": "2026-09-15",
+  "currency": "INR",
+  "remarks": "Outbox processor scheduler test",
+  "items": [
+    {
+      "itemNumber": 10,
+      "product_ID": "71000000-0000-0000-0000-000000000001",
+      "quantity": 1,
+      "unitOfMeasure": "EA",
+      "requestedUnitPrice": 2500000,
+      "estimatedAmount": 2500000,
+      "currency": "INR",
+      "requiredDate": "2026-09-15",
+      "remarks": "Outbox processor scheduler test item"
+    }
+  ]
+}
+###
+POST http://localhost:4004/purchase-requisition/submitPurchaseRequisition
+Content-Type: application/json
+
+{
+  "requisitionId": "8ae58f83-a8cc-48e2-96b7-72674ed0a50e"
+}
+
+###
+POST http://localhost:4004/purchase-requisition/submitPurchaseRequisition
+Content-Type: application/json
+
+{
+  "requisitionId": "8ae58f83-a8cc-48e2-96b7-72674ed0a50e"
+}
+
+###
+POST http://localhost:4004/purchase-requisition-approval/startApproval
+Content-Type: application/json
+
+{
+  "requisitionId": "8ae58f83-a8cc-48e2-96b7-72674ed0a50e"
+}

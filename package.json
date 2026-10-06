@@ -1,0 +1,38 @@
+{
+  "name": "dealer360",
+  "version": "1.0.0",
+  "description": "DEALER360 Enterprise B2B Dealer Operations Platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "cds-serve",
+    "watch": "cds watch"
+    
+  },
+  "dependencies": {
+    "@cap-js/hana": "2.8.1",
+    "@sap/cds": "9.9.3",
+    "@sap/xssec": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "2.4.1",
+    "@sap/cds-dk": "^10.1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "private": true,
+ "cds": {
+  "requires": {
+    "[development]": {
+      "auth": "dummy"
+    },
+    "[production]": {
+      "auth": "dummy"
+    }
+  },
+  "server": {
+    "index": true
+  }
+}
+}

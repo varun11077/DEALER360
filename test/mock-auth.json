@@ -1,0 +1,12 @@
+{
+  "requires": {
+    "auth": {
+      "kind": "mocked",
+      "users": {
+        "alice": { "password": "a", "roles": ["User", "Admin"] },
+        "bob":   { "password": "b", "roles": ["User"] },
+        "carol": { "password": "c", "roles": [] }
+      }
+    }
+  }
+}
